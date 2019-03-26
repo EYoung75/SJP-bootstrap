@@ -44,7 +44,7 @@
   .about {
     height: auto;
     width: 100%;
-
+    margin-bottom: 5rem;
     img {
       height: auto;
       width: 100%;
@@ -74,6 +74,7 @@
   }
 
   .services {
+    margin-bottom: 4rem;
     img {
       height: auto;
       width: 100%;
@@ -91,7 +92,7 @@
   }
 
   .locations {
-    
+    margin-bottom: 4rem;
     .locCard {
       margin: .5rem;
       border: solid black 1px;
@@ -109,6 +110,11 @@
     }
   }
 
+  .forms {
+    height: auto;
+    padding: 2rem;
+
+  }
   .footer {
     height: 4rem;
     width: 100%;
@@ -116,7 +122,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     line-height: 0.01rem;
     font-family: "Lora", serif;
