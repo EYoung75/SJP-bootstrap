@@ -1,31 +1,47 @@
 import React from "react";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
+import { Link } from "react-router-dom";
 
-const Navigation = (props) => {
-    return (
-      <div>
-        <Navbar dark className={"navBar"}>
-          <a href="/"><h4>St. John's Pediatrics</h4></a>
-          <NavbarToggler onClick={props.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={!props.collapsed} navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink href="/components/">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Services</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/">Locations</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Patient Forms</NavLink>
-              </NavItem> 
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
-    );
-}
+const Navigation = props => {
+  return (
+    <div>
+      <Navbar dark className={"navBar"}>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h4>St. John's Pediatrics</h4>
+        </Link>
+        <NavbarToggler onClick={props.toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!props.collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <h4>Home</h4>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <h4>About</h4>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/services" style={{ textDecoration: "none" }}>
+                <h4>Services</h4>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/locations" style={{ textDecoration: "none" }}>
+                <h4>Locations</h4>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/forms" style={{ textDecoration: "none" }}>
+                <h4>Patient Forms</h4>
+              </Link>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+};
 
 export default Navigation;
