@@ -1,9 +1,10 @@
 import React from "react";
+import { Container } from "reactstrap";
 
 const Home = () => {
   return (
+    <Container>
     <div className="home">
-
       <img src={require("../assets/baby.JPG")} alt="baby" />
       <h4>Beach Location Staff</h4>
       <img
@@ -23,6 +24,7 @@ const Home = () => {
         alt="extended staff two"
       />
     </div>
+    </Container>
   );
 };
 

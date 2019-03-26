@@ -2,23 +2,31 @@
 
 .App {
   font-size: 16px;
-  font-family: "Lora";
+  font-family: "Raleway";
   text-align: center;
   height: auto;
-  
+
   .navBar {
-    background: #3E5177;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: #3e5177;
     text-align: right;
     color: white;
-
+    border-bottom: solid black 1px;
+    h4 {
+      font-family: "Lora";
+    }
     a {
+      padding-top: 1rem;
       color: white;
       font-size: 1.25rem;
-      
     }
   }
 
   .home {
+    margin-top: 4rem;
     height: auto;
     width: 100%;
     display: flex;
@@ -36,18 +44,22 @@
 
     .info {
       padding: 2rem;
-      background-color: #3E5177;
+      background-color: #3e5177;
       color: white;
     }
   }
 
   .about {
+    margin-top: 4rem;
     height: auto;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     img {
       height: auto;
       width: 100%;
+    }
+    h4 {
+      margin: 1rem 0rem 1rem 0rem;
     }
 
     .drs {
@@ -74,6 +86,7 @@
   }
 
   .services {
+    margin-top: 4rem;
     margin-bottom: 4rem;
     img {
       height: auto;
@@ -84,19 +97,23 @@
       text-decoration: underline;
       margin-top: 1rem;
     }
-
-    ul {
-      text-align: left;
-      line-height: 1.5rem;
+    .offerings {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      ul {
+        text-align: left;
+        line-height: 1.5rem;
+      }
     }
   }
 
   .locations {
+    margin-top: 4rem;
     margin-bottom: 4rem;
     .locCard {
-      margin: .5rem;
+      margin: 0.5rem;
       border: solid black 1px;
-      padding: .5rem;
+      padding: 0.5rem;
       display: flex;
       line-height: 1.25rem;
       h4 {
@@ -111,9 +128,12 @@
   }
 
   .forms {
+    margin-top: 4rem;
     height: auto;
     padding: 2rem;
-
+    a {
+      margin: 1rem;
+    }
   }
   .footer {
     height: 4rem;
@@ -127,6 +147,7 @@
     line-height: 0.01rem;
     font-family: "Lora", serif;
     color: white;
+    border-top: solid black 1px;
 
     h2 {
       font-size: 1.25rem;
@@ -141,6 +162,74 @@
       text-align: center;
       line-height: 0.5rem;
       margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .App {
+    font-size: 24px;
+    background-color: rgba(62, 81, 119, .5);
+
+    .home {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: white;
+      .info {
+        width: 100%;
+        margin-top: 1rem;
+      }
+      img {
+        width: 50%;
+      }
+    }
+
+    .about {
+      background-color: white;
+      padding: 1rem;
+      width: auto;
+      img {
+        width: 50%;
+      }
+      .drs {
+        img {
+          height: 15rem;
+        }
+        margin-bottom: 2rem;
+      }
+    }
+
+    .services {
+      padding-top: 1rem;
+      background-color: white;
+      img {
+        height: 60vh;
+        width: auto;
+      }
+
+      .offerings {
+        text-align: center;
+        background-color: #3e5177;
+        padding: 3rem;
+        color: white;
+        margin: 2rem 0rem 2rem 0rem;
+        border-top: solid black 2px;
+        border-bottom: solid black 2px;
+      }
+    }
+
+    .locations {
+      padding-top: 1rem;
+      background-color: white;
+      height: 100vh;
+    }
+
+    .forms {
+      background-color: white;
+      height: 100vh;
     }
   }
 }

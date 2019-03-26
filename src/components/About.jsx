@@ -3,26 +3,29 @@ import { Col, Row, Container } from "reactstrap";
 
 const About = () => {
   return (
-    <div className="about">
-      <img src={require("../assets/Clinic_exterior.JPG")} alt="clinic" />
+    <Container>
+      <div className="about">
       <h1>About</h1>
-      <h4>St. John's Pediatric Clinic</h4>
-      <Container>
-        <Row  className="drs">
-          <Col>
-            <img src={require("../assets/Dr.Abrea.jpg")} alt="Dr. Abrea" />
-            <p>Leticia Abrea M.D. FAAP</p>
-          </Col>
-          <Col>
-            <img src={require("../assets/Dr.Dizon.jpg")} alt="Dr. Dizon" />
-            <p>Liberty Dizon M.D. FAAP</p>
-          </Col>
-          <Col>
-            <img src={require("../assets/Dr.Valenzuela.jpg")} alt="Dr. Valenzuela" />
-            <p>Vanessa Valenzuela M.D. FAAP</p>
-          </Col>
-        </Row>
-        <div className="bio">
+        <img src={require("../assets/Clinic_exterior.JPG")} alt="clinic" />
+        <h4>St. John's Pediatric Clinic</h4>
+          <Row className="drs">
+            <Col>
+              <img src={require("../assets/Dr.Abrea.jpg")} alt="Dr. Abrea" />
+              <p>Leticia Abrea M.D. FAAP</p>
+            </Col>
+            <Col>
+              <img src={require("../assets/Dr.Dizon.jpg")} alt="Dr. Dizon" />
+              <p>Liberty Dizon M.D. FAAP</p>
+            </Col>
+            <Col>
+              <img
+                src={require("../assets/Dr.Valenzuela.jpg")}
+                alt="Dr. Valenzuela"
+              />
+              <p>Vanessa Valenzuela M.D. FAAP</p>
+            </Col>
+          </Row>
+          <div className="bio">
             <h4>History of St. John’s Pediatrics </h4>
             <p>
               St. John’s Pediatrics was established in 2007 in the City of
@@ -60,8 +63,9 @@ const About = () => {
               towards adulthood.
             </p>
           </div>
-      </Container>
-    </div>
+ 
+      </div>
+    </Container>
   );
 };
 
