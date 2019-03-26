@@ -41,6 +41,55 @@
     }
   }
 
+  .about {
+    height: auto;
+    width: 100%;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    .drs {
+      img {
+        height: 8rem;
+        object-fit: fill;
+      }
+    }
+
+    .bio {
+      padding: 2rem;
+      border: solid black 1px;
+      margin-bottom: 1rem;
+      h4 {
+        text-decoration: underline;
+      }
+
+      p {
+        text-align: left;
+        text-indent: 1.5rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .services {
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    h3 {
+      text-decoration: underline;
+      margin-top: 1rem;
+    }
+
+    ul {
+      text-align: left;
+      line-height: 1.5rem;
+    }
+  }
+
   .footer {
     height: 4rem;
     width: 100%;
