@@ -90,6 +90,25 @@
     }
   }
 
+  .locations {
+    
+    .locCard {
+      margin: .5rem;
+      border: solid black 1px;
+      padding: .5rem;
+      display: flex;
+      line-height: 1.25rem;
+      h4 {
+        text-decoration: underline;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
   .footer {
     height: 4rem;
     width: 100%;
@@ -97,6 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     bottom: 0;
     line-height: 0.01rem;
     font-family: "Lora", serif;
