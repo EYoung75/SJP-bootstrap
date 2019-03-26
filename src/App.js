@@ -7,6 +7,7 @@ import About from "./components/About.jsx";
 import Services from "./components/Services.jsx";
 import Locations from "./components/Locations.jsx";
 import Forms from "./components/Forms.jsx";
+import Footer from "./components/Footer.jsx";
 
 class App extends Component {
   state = {
@@ -28,6 +29,7 @@ class App extends Component {
         <Route path="/services" component={Services}/>
         <Route path="/locations" component={Locations}/>
         <Route path="/forms" component={Forms}/>
+        <Footer/>
       </div>
     )
   }
