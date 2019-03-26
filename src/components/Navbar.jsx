@@ -13,27 +13,27 @@ const Navigation = props => {
         <Collapse isOpen={!props.collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/" style={{ textDecoration: "none" }} onClick={props.toggleNavbar}>
                 <h4>Home</h4>
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/about" style={{ textDecoration: "none" }}>
+              <Link to="/about" style={{ textDecoration: "none" }} onClick={props.toggleNavbar}>
                 <h4>About</h4>
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/services" style={{ textDecoration: "none" }}>
+              <Link to="/services" style={{ textDecoration: "none" }} onClick={props.toggleNavbar}>
                 <h4>Services</h4>
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/locations" style={{ textDecoration: "none" }}>
+              <Link to="/locations" style={{ textDecoration: "none" }} onClick={props.toggleNavbar}>
                 <h4>Locations</h4>
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/forms" style={{ textDecoration: "none" }}>
+              <Link to="/forms" style={{ textDecoration: "none" }} onClick={props.toggleNavbar}>
                 <h4>Patient Forms</h4>
               </Link>
             </NavItem>
