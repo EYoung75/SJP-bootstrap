@@ -41,7 +41,7 @@ const Navigation = props => {
         </Collapse>
       </Navbar>
     </div>
-  );
-};
+  )
+}
 
 export default Navigation;

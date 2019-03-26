@@ -32,7 +32,7 @@ const Services = () => {
         />
       </div>
     </Container>
-  );
-};
+  )
+}
 
 export default Services;

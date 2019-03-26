@@ -38,7 +38,7 @@ const Forms = () => {
         </Container>
       </div>
     </Container>
-  );
-};
+  )
+}
 
 export default Forms;

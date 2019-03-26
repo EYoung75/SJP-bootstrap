@@ -8,7 +8,7 @@ const Footer = () => {
         <h3>Jacksonville, FL | Saint Augustine, FL</h3>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Footer;

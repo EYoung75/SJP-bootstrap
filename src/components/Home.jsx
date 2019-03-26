@@ -25,7 +25,7 @@ const Home = () => {
       />
     </div>
     </Container>
-  );
-};
+  )
+}
 
 export default Home;

@@ -34,17 +34,15 @@ const Locations = () => {
                 <br />
                 <a href="tel:904-230-0624">Phone: 904-230-0624 </a>
                 <a href="tel:904-230-9427">Fax: 904-230-9427</a>
-                <div className="hours">
                   <h4>Hours:</h4>
                   <p> Mon-Fri: 8:30-5:00</p>
-                </div>
               </Card>
             </Col>
           </Row>
         </Container>
       </div>
     </Container>
-  );
-};
+  )
+}
 
 export default Locations;
