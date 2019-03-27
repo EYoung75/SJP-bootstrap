@@ -7,7 +7,6 @@
   height: auto;
   background-color: rgba(62, 81, 119, .5);
 
-
   .navBar {
     position: fixed;
     top: 0;
@@ -17,9 +16,11 @@
     text-align: right;
     color: white;
     border-bottom: solid black 1px;
+
     h4 {
       font-family: "Lora";
     }
+
     a {
       padding-top: 1rem;
       color: white;
@@ -28,8 +29,8 @@
   }
 
   .home {
-    background-color: white;
     margin-top: 4rem;
+    background-color: white;
     height: auto;
     width: 100%;
     display: flex;
@@ -53,24 +54,28 @@
   }
 
   .about {
-    background-color: white;
     margin-top: 4rem;
+    background-color: white;
     height: auto;
     width: 100%;
     margin-bottom: 4rem;
     padding: 1rem;
+
     img {
       height: auto;
       width: 100%;
     }
+
     h4 {
       margin: 1rem 0rem 1rem 0rem;
     }
 
     .drs {
       img {
-        height: 8rem;
-        object-fit: fill;
+        height: 10rem;
+        width: auto;
+        object-fit: cover;
+        margin: 0rem;
       }
     }
 
@@ -78,6 +83,7 @@
       padding: 2rem;
       border: solid black 1px;
       margin-bottom: 1rem;
+
       h4 {
         text-decoration: underline;
       }
@@ -91,10 +97,10 @@
   }
 
   .services {
-    padding-top: 1rem;
-    background-color: white;
     margin-top: 4rem;
+    background-color: white;
     margin-bottom: 4rem;
+
     img {
       height: auto;
       width: 100%;
@@ -104,9 +110,11 @@
       text-decoration: underline;
       margin-top: 1rem;
     }
+
     .offerings {
       margin-left: 2rem;
       margin-right: 2rem;
+
       ul {
         text-align: left;
         line-height: 1.5rem;
@@ -115,16 +123,18 @@
   }
 
   .locations {
+    margin-top: 4rem;
     padding-top: 1rem;
     background-color: white;
-    margin-top: 4rem;
     margin-bottom: 4rem;
+
     .locCard {
       margin: 0.5rem;
       border: solid black 1px;
       padding: 0.5rem;
       display: flex;
       line-height: 1.25rem;
+
       h4 {
         text-decoration: underline;
         margin-top: 1rem;
@@ -138,14 +148,16 @@
   }
 
   .forms {
-    height: 100vh;
-    background-color: white;
     margin-top: 4rem;
+    height: 110vh;
+    background-color: white;
     padding: 2rem;
+
     a {
       margin: 1rem;
     }
   }
+
   .footer {
     height: 4rem;
     width: 100%;
@@ -187,10 +199,12 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
+
       .info {
         width: 100%;
         margin-top: 1rem;
       }
+
       img {
         width: 50%;
       }
@@ -199,19 +213,23 @@
     .about {
       padding: 1rem;
       width: auto;
+
       img {
         width: 50%;
       }
+
       .drs {
         img {
           height: 15rem;
         }
+
         margin-bottom: 2rem;
       }
     }
 
     .services {
       padding-top: 1rem;
+
       img {
         height: 60vh;
         width: auto;
@@ -231,6 +249,7 @@
     .locations {
       padding-top: 1rem;
       height: 100vh;
+
       .locCard {
         line-height: 2rem;
       }
@@ -238,6 +257,10 @@
 
     .forms {
       height: 100vh;
+
+      a {
+        height: auto;
+      }
     }
   }
 }
