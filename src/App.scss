@@ -6,6 +6,7 @@
   text-align: center;
   height: auto;
   background-color: rgba(62, 81, 119, .5);
+  flex: 1;
 
   .navBar {
     position: fixed;
@@ -29,10 +30,9 @@
   }
 
   .home {
-    margin-top: 4rem;
+    margin-top: 3rem;
     background-color: white;
     height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -48,6 +48,7 @@
 
     .info {
       padding: 2rem;
+      margin: 0rem;
       background-color: #3e5177;
       color: white;
     }
@@ -126,7 +127,6 @@
     margin-top: 4rem;
     padding-top: 1rem;
     background-color: white;
-    margin-bottom: 4rem;
 
     .locCard {
       margin: 0.5rem;
@@ -149,7 +149,7 @@
 
   .forms {
     margin-top: 4rem;
-    height: 110vh;
+    height: 85vh;
     background-color: white;
     padding: 2rem;
 
@@ -165,7 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     line-height: 0.01rem;
     font-family: "Lora", serif;
